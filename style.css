@@ -36,10 +36,9 @@ h2{
     font-size: 4vw;
 }
 h3{
-    font-weight: 400;
     font-size: 1.4vw;
     font-weight: 600;
-    letter-spacing: -.1vw;
+    letter-spacing: -.05vw;
 
 }
 h4{
@@ -73,7 +72,7 @@ html,body{
 .main{
     width: 100%;
     background-color: #fff;
-    padding: 0 15vw;
+    /* padding: 0 10vw; */
 }
 
 /* home */
@@ -87,7 +86,7 @@ html,body{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 30px 50px;
+    padding: 30px 70px;
 }
 .nav img{
     width: 100px;
@@ -113,27 +112,38 @@ html,body{
 
 .homemain{
     width: 100%;
-    padding: 15vw 0;
+    padding: 12vw 0;
     /* background-color: red; */
+    padding: 11vw 10vw;
+}
+.homemain>h3{
+    padding: 0 5vw;
 }
 
 .headings{
     display: flex;
     gap: 40px;
+    padding: 0 5vw;
 }
 .headings>h1{
     color: transparent;
     -webkit-text-stroke: 1px #000;
+    transition: 0.3s ease-in-out;
+}
+.headings>h1:hover{
+    color: #000;
+    -webkit-text-stroke: none;
 }
 
 .lowerText>p{
     width: 70%;
+    padding: 0 14vw;
 }
 
 /* featured section */
 
 .fetured{
-    padding-top: 10vw;
+    padding: 10vw 10vw;
 }
 .f-heading>h2{
     line-height: 4vw;
@@ -152,6 +162,7 @@ html,body{
     width: 100%;
     height: 100vh;
     margin-top: 5vw;
+    padding: 0 10vw;
     /* border: 2px solid red */
 }
 
@@ -166,7 +177,7 @@ html,body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-item: center;
+    /* align-items: center; */
     /* background-color: red; */
 }
 .fright{
@@ -196,7 +207,7 @@ html,body{
 /* carosel container */
 
 .dev{
-    padding: 10vw 0;
+    padding: 10vw;
 }
 .dev>h4{
     width: 30%;
@@ -210,12 +221,37 @@ html,body{
 .slides{
     display: flex;
     justify-content: space-between;
+    padding: 0vw 10vw;
 }
 .slide{
     width: 30%;
+    cursor: pointer;
 }
 .slide>.img{
     width: 100%;
-    height: 20vh;
-    background-color: red;
+    height: 25vh;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.slide>.tag{
+    margin: 20px 0;
+    padding: 15px 20px;
+    width: fit-content;
+    border-radius: 100px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+.slide>h3{
+    letter-spacing: 0;
+    font-size: 1.2vw;
+}
+.slide>.img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top{
+    padding: 5vw 0; 
 }
