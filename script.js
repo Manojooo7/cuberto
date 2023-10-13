@@ -1,6 +1,4 @@
-
 // Mouse Flolower Animation
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 Shery.mouseFollower();
 // Mouse Magnet Animation
 Shery.makeMagnet(".magnet");
@@ -27,23 +25,6 @@ gsap.to(".fleftItem",{
 let sections = document.querySelectorAll(".fleftItem");
 
 
-// Shery.imageEffect('.images', {
-//     style: 3,
-//     slideStyle: (setScroll) => {
-//         sections.forEach(function (section){
-//             ScrollTrigger.create({
-//                 trigger: section,
-//                 start: "top top",
-//                 scrub: 1,
-//                 onUpdate: function (prog){
-//                     console.log(prog);
-//                 }
-
-//             })
-//         })
-//     },
-//   });
-
 Shery.imageEffect('.images', {
     style: 3,
     slideStyle: (setScroll) => {
@@ -53,12 +34,11 @@ Shery.imageEffect('.images', {
                 start: "top top",
                 scrub: 1,
                 onUpdate: function (prog){
-                    setScroll(prog.progress+index);
-                }
-
+                    setScroll(prog.progress+index)
+                },
             })
         })
-    
-    }
-})
+    },
+  });
+
 
