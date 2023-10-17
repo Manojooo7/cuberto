@@ -7,8 +7,8 @@ Shery.hoverWithMediaCircle(".hvr", { videos: ['./0.mp4', './1.mp4', './2.mp4'] }
 
 // fleft pin animation
 
-gsap.to(".fleftItem",{
-    scrollTrigger:{
+gsap.to(".fleftItem", {
+    scrollTrigger: {
         trigger: ".fimages",
         pin: true,
         start: "top top",
@@ -25,20 +25,20 @@ gsap.to(".fleftItem",{
 let sections = document.querySelectorAll(".fleftItem");
 
 
-Shery.imageEffect('.images', {
+Shery.imageEffect('#images', {
     style: 3,
     slideStyle: (setScroll) => {
-        sections.forEach(function (section, index){
+        sections.forEach(function (section, index) {
             ScrollTrigger.create({
                 trigger: section,
                 start: "top top",
                 scrub: 1,
-                onUpdate: function (prog){
-                    setScroll(prog.progress+index)
+                onUpdate: function (prog) {
+                    setScroll(prog.progress + index)
                 },
             })
         })
     },
-  });
+});
 
 
