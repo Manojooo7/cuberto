@@ -20,12 +20,13 @@ gsap.to(".fleftItem",{
     ease: Power1
 });
 
+
 // fright images animation
 
 let sections = document.querySelectorAll(".fleftItem");
 
 
-Shery.imageEffect('.images', {
+Shery.imageEffect(".images", {
     style: 3,
     slideStyle: (setScroll) => {
         sections.forEach(function (section, index){
@@ -42,3 +43,20 @@ Shery.imageEffect('.images', {
   });
 
 
+// from shery tutorials
+
+// Shery.imageEffect(".images", {
+//     style: 5,
+//         slideStyle: (setScroll) => {
+//         sections.forEach(function (section, index) {
+//             ScrollTrigger.create({
+//             trigger: section,
+//             start: "top top",
+//             scrub: 1,
+//             onUpdate: function (prog) {
+//             setScroll(prog.progress+index)
+//             },
+//             });
+//             });
+//         },
+// });
