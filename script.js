@@ -28,6 +28,7 @@ let sections = document.querySelectorAll(".fleftItem");
 
 Shery.imageEffect('.images', {
     style: 3,
+    config: {onMouse: {value: 1}},
     slideStyle: (setScroll) => {
         sections.forEach(function (section, index) {
             ScrollTrigger.create({
