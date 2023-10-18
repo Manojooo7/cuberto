@@ -76,11 +76,10 @@ html,body{
     height: 100%;
 }
 
-/* .main{
+.main{
     width: 100%;
-    background-color: #fff;
-    padding: 0 10vw;
-} */
+    /* background-color: #fff; */
+}
 
 /* home */
 .home{
